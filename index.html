@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <!-- desktop navigation -->
+    <nav id="desktop-nav">
+        <div class="logo">Utsav Parmar</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#education">Education</a></li> -->
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- hamburger navigation -->
+    <nav id="hamburger-nav">
+        <div class="logo">Utsav Parmar</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <!-- <li><a href="#education" onclick="toggleMenu()">Education</a></li> -->
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <!-- profile section -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile_pic7.webp" alt="Utsav Parmar profile picture" style="border-radius: 12rem; ">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Utsav Parmar</h1>
+            <p class="section__text__p2">AI/ML Engineer</p>
+            <div class="btn-container">
+                <button 
+                    class="btn btn-color-2" 
+                    onclick="window.open('./assets/Utsav_SoftwareEngineer_Resume.pdf')"
+                >
+                Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                    src="./assets/linkedin.png" 
+                    alt="My Linkedin Profile" 
+                    class="icon" 
+                    onclick="location.href='https://www.linkedin.com/in/utsav-parmar-229635232/'"
+                />
+                <img 
+                    src="./assets/github.png" 
+                    alt="My Github Profile" 
+                    class="icon" 
+                    onclick="location.href='https://github.com/utsav7parmar/'"
+                />
+            </div>
+        </div>
+    </section>
+    <!-- about section -->
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                    src="./assets/mypic.jpg" 
+                    alt="Profile picture"
+                    class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                            src="./assets/experience.png" 
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>1+ years <br />Lecturer Faculty</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                            src="./assets/education.png" 
+                            alt="Education icon"
+                            class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Diploma in Engineering<br />B.E. Bachelors Degree</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p style="text-align: justify;">
+                        Aspiring for the Software Engineer role and Machine Learning Engineer role, currently in my final year of a Bachelor's in Computer Engineering with a diploma background. Skilled in Python, Java, C, C++, and PHP, with hands-on experience in version control (Git/GitHub) and a solid foundation in AWS cloud and machine learning concepts. Passionate about building intelligent, data-driven solutions that solve real-world problems. Actively seeking an internship or entry-level opportunity to apply my skills, learn from real projects, and grow into a well-rounded engineer at the intersection of software development and ML model development.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow" 
+            onclick="location.href='./#experience'"
+        />
+    </section>
+    <!-- education section -->
+     <!-- <section id="education">
+        
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow" 
+            onclick="location.href='./#experience'"
+        />
+     </section> -->
+    <!-- experience section -->
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Development Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>React Framework</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Algorithm</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Data Structure</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>C Language</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>C++ Language</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Machine Learning</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Mathematics</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Git & GitHub</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>CS Fundamentals</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Certificates</h2>
+                        <div class="article-container">
+                            <article>
+                                <img 
+                                    src="./assets/link-flat-on-transparent-background-free-png.webp" 
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3><a href="https://www.credly.com/badges/82a5d4ca-14c3-4e0d-98fa-80dc67392861/public_url">AWS Cloud Foundation</a></h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/link-flat-on-transparent-background-free-png.webp" 
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3><a href="https://www.credly.com/badges/ed10b9dd-928e-4200-a8f9-aea2c73cf4a2/public_url">AWS Machine Learning</a></h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/link-flat-on-transparent-background-free-png.webp" 
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3><a href="https://coursera.org/share/677c9daf7973f6e393adcb31356b0b99">Python Programming</a></h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/link-flat-on-transparent-background-free-png.webp" 
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3><a href="https://coursera.org/share/245ba03d9abfbd00fc964f9c67abd764">Version Control</a></h3>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Research Papers</h2>
+                        <div class="article-container">
+                            <article>
+                                <img 
+                                    src="./assets/link-flat-on-transparent-background-free-png.webp" 
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <h3><a href="https://ijrpr.com/uploads/V6ISSUE10/IJRPR53640.pdf">Breast Cancer</a></h3>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow" 
+            onclick="location.href='./#projects'"
+        />
+    </section>
+    <!-- project section -->
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./assets/image.png" 
+                            style="height: 300px; width: fit-content;"
+                            alt="Project 1"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Portfolio</h2>
+                    <div class="btn-container">
+                        <button 
+                            class="btn btn-color-2 project-btn" 
+                            onclick="location.href='https://github.com/utsav7parmar/'">
+                            GitHub
+                        </button>
+                        <button 
+                            class="btn btn-color-2 project-btn" 
+                            onclick="location.href='https://github.com/utsav7parmar/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./assets/BCUKNN.jpg" 
+                            style="height: 300px; width: fit-content;"
+                            alt="Project 2"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Breast Cancer Classification using KNN</h2>
+                    <div class="btn-container">
+                        <button 
+                            class="btn btn-color-2 project-btn" 
+                            onclick="location.href='https://colab.research.google.com/drive/1eTRfDlD0R1OEBXH2JhFWJUlHiHvFW9cF#scrollTo=U6NL0e6W8a4A'">
+                            Collab
+                        </button>
+                        <!-- <button 
+                            class="btn btn-color-2 project-btn" 
+                            onclick="location.href='https://colab.research.google.com/drive/1eTRfDlD0R1OEBXH2JhFWJUlHiHvFW9cF#scrollTo=U6NL0e6W8a4A'">
+                            
+                        </button> -->
+                    </div>
+                </div>
+                <!-- <div class="details-container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./assets/project-3.png" 
+                            alt="Project 3"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button 
+                            class="btn btn-color-2 project-btn" 
+                            onclick="location.href='https://github.com/utsav7parmar/'">
+                            GitHub
+                        </button>
+                        <button 
+                            class="btn btn-color-2 project-btn" 
+                            onclick="location.href='https://github.com/utsav7parmar/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow" 
+            onclick="location.href='./#contact'"
+        />
+    </section>
+    <!-- contact section -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/email.png" 
+                    alt="Email icon"
+                    class="icon contact-icon email-icon"
+                />
+                <p>
+                    <a href="mailto:utsavparmar7749@gmail.com">utsavparmar7749@gmail.com</a>
+                </p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/linkedin.png" 
+                    alt="Linkedin icon"
+                    class="icon contact-icon"
+                />
+                <p>
+                    <a href="https://www.linkedin.com/in/utsav-parmar-229635232/">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+        <img 
+            src="./assets/up-arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow" 
+            onclick="location.href='./#profile'"
+        />
+    </section>
+    <!-- footer -->
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#education">Education</a></li> -->
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Utsav Parmar. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
