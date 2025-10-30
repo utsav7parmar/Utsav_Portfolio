@@ -36,7 +36,7 @@ nav,
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 9vh;
 }
 
 .nav-links {
@@ -166,7 +166,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    height: 95.5vh;
 }
 
 .section__pic-container {
@@ -187,6 +187,7 @@ section {
 
 .section__text__p1 {
     text-align: center;
+    font-size: 2rem;
 }
 
 .section__text__p2 {
@@ -195,7 +196,7 @@ section {
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
 }
 
@@ -218,7 +219,8 @@ section {
  .btn-container {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    font-size: 1.5rem;
+    gap: 2rem;
  }
 
  .btn {
@@ -309,9 +311,37 @@ section {
 }
 
 .section__pic-container {
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
     margin: auto 0;
+}
+
+/* education section */
+
+#education {
+    position: relative;
+}
+
+.education-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.education-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-containers {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: space-around;
 }
 
 /* experience section */

@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <!-- <li><a href="#education">Education</a></li> -->
+                <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -33,7 +34,7 @@
             </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <!-- <li><a href="#education" onclick="toggleMenu()">Education</a></li> -->
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
@@ -43,12 +44,12 @@
     <!-- profile section -->
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/profile_pic7.webp" alt="Utsav Parmar profile picture" style="border-radius: 12rem; ">
+            <img src="./assets/profile_pic7.webp" alt="Utsav Parmar profile picture" style="border-radius: 14rem; ">
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Utsav Parmar</h1>
-            <p class="section__text__p2">AI/ML Engineer</p>
+            <p class="section__text__p2">Fresher AI/ML Engineer</p>
             <div class="btn-container">
                 <button 
                     class="btn btn-color-2" 
@@ -120,19 +121,60 @@
             src="./assets/arrow.png" 
             alt="Arrow icon" 
             class="icon arrow" 
-            onclick="location.href='./#experience'"
+            onclick="location.href='./#education'"
         />
     </section>
     <!-- education section -->
-     <!-- <section id="education">
-        
+     <section id="education">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Education</h1>
+        <div class="education-details-container">
+            <div class="about-containers">
+                <!-- Diploma Study -->
+                <div class="details-container">
+                    <h2 class="education-sub-title">Diploma in Engineering</h2>
+                    <div class="article-containers">
+                        <!-- <article> -->
+                            <div>
+                                <h3>R.C. Technical Institute, Sola, Ahemedabad</h3>
+                                <p>Affiliation: Gujarat Technological University</p>
+                                <br/>
+                                <h3>Computer Engineering</h3>
+                                <p>accredited by NBA</p>
+                                <br/>
+                                <h3>Cumulative Grade Point Average<p>CGPA: 7.23/10</p></h3>
+                                <p>2020-2023</p>
+                            </div>
+                        <!-- </article> -->
+                    </div>
+                </div>
+                <!-- Bachelor's study -->
+                <div class="details-container">
+                    <h2 class="education-sub-title">Bachelor's of Engineering</h2>
+                    <div class="article-containers">
+                        <!-- <article> -->
+                            <div>
+                                <h3>Sal College of Engineering, Science city, Ahemedabad</h3>
+                                <p>Affiliation: Gujarat Technological University</p>
+                                <br/>
+                                <h3>Computer Engineering</h3>
+                                <!-- <p>accredited by NBA</p> -->
+                                <br/>
+                                <h3>Cumulative Grade Point Average<p>CGPA: appearing</p></h3>
+                                <p>2023-2026</p>
+                            </div>
+                        <!-- </article> -->
+                    </div>
+                </div>
+            </div>
+        </div>
         <img 
             src="./assets/arrow.png" 
             alt="Arrow icon" 
             class="icon arrow" 
             onclick="location.href='./#experience'"
         />
-     </section> -->
+     </section>
     <!-- experience section -->
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
@@ -140,6 +182,7 @@
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container">
+                    <!-- development skills -->
                     <h2 class="experience-sub-title">Development Skills</h2>
                     <div class="article-container">
                         <article>
@@ -308,7 +351,7 @@
                             </div>
                         </article>
                     </div>
-                
+                    <!-- certificates and research papers -->
                     <h2 class="experience-sub-title">Certificates and Research</h2>
                     <div class="article-container">
                         <article>
@@ -359,6 +402,14 @@
                                 />
                                 <h3><a href="https://ijrpr.com/uploads/V6ISSUE10/IJRPR53640.pdf">Breast Cancer</a></h3>
                         </article>
+                        <article>
+                                <img 
+                                    src="./assets/link-flat-on-transparent-background-free-png.webp" 
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <h3><a href="assets/SSIP Hackathon.jpg">SSIP Hack Participation</a></h3>
+                        </article>
                     </div>                       
                 </div>
             </div>
@@ -393,8 +444,8 @@
                         </button>
                         <button 
                             class="btn btn-color-2 project-btn" 
-                            onclick="location.href='https://github.com/utsav7parmar/'">
-                            Live Demo
+                            onclick="location.href='https://utsavnparmar.netlify.app/'">
+                            Website
                         </button>
                     </div>
                 </div>
@@ -490,11 +541,27 @@
             <div class="nav-links-container">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
-                    <!-- <li><a href="#education">Education</a></li> -->
+                    <li><a href="#education">Education</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+            </div>
+        </nav>
+        <nav>
+            <div class="nav-links-container nav-links">
+                <a href="https://github.com/utsav7parmar/" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github" style="font-size: 2.5rem;"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/utsav-parmar-229635232/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin" style="font-size: 2.5rem;"></i>
+                </a>
+                <a href="mailto:utsavparmar7749@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope" style="font-size: 2.5rem;"></i>
+                </a>
+                <a href="https://leetcode.com/u/Utsav794/" target="_blank" aria-label="LeetCode">
+                    <i class="fas fa-code" style="font-size: 2.5rem;"></i>
+                </a>
             </div>
         </nav>
         <p>Copyright &#169; 2025 Utsav Parmar. All Rights Reserved.</p>
