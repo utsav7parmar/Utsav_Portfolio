@@ -395,9 +395,9 @@ article .icon {
 }
 
 .project-img {
-    border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    border-radius: 2.5rem;
+    width: 450px;
+    height: 300px;
 }
 
 .project-title {
